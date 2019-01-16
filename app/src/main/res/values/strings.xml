@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Planet Age</string>
+    <string name="planet_mercury">Mercury</string>
+    <string name="venus_planet">Venus</string>
+    <string name="mars_planet">Mars</string>
+    <string name="jupiter_planet">Jupiter</string>
+    <string name="saturn_planet">Saturn</string>
+    <string name="uranus_planet">Uranus</string>
+</resources>
