@@ -30,8 +30,15 @@ class MainActivity : AppCompatActivity() {
     }
 
    fun changeAge(factor: Double){
-        var days_old =  (years.text.toString().toDouble() * 365.0) + (months.text.toString().toDouble() * 30.0) + (days.text.toString().toDouble())
-        var result_years = days_old/factor
-        result.text = result_years.toString()
+       try {
+           error_message.text = ""
+           var days_old =
+               (years.text.toString().toDouble() * 365.0) + (months.text.toString().toDouble() * 30.0) + (days.text.toString().toDouble())
+           var result_years = days_old / factor
+           result.text = result_years.toString()
+       }
+       catch (e: Exception){
+           error_message.text = "Make sure all of your inputs are numbers!"
+       }
     }
 }
